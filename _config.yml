@@ -1,0 +1,15 @@
+# Document:
+# http://simiki.org/docs/configuration.html
+
+url: 
+title: BulldogX's personal knowledge wiki
+keywords: iOS
+description: A wiki website of BulldogX when I learned new knowledgy and technics. 
+author: BulldogX
+
+root: /wiki
+
+deploy:
+    - type: git
+      remote: origin
+      branch: gh-pages

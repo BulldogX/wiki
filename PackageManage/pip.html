@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="Stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="Stylesheet" type="text/css" href="/static/css/tango.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="alternate" type="application/atom+xml" href="atom.xml" title="Atom feed">
+    <title>pip - </title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+      
+<div id="header">
+  <div class="post-nav"><a href="/">Home</a>&nbsp;&#187;&nbsp;<a href="/#PackageManage">PackageManage</a>&nbsp;&#187;&nbsp;pip
+    <span class="updated">Page Updated&nbsp;
+      2018-04-09 10:27
+    </span></div>
+</div>
+<div class="clearfix"></div>
+
+<div class="page_title">pip</div>
+
+  <div class="toc"><span class="toctitle">Table of Contents</span><ul>
+<li><a href="#pip">pip</a></li>
+</ul>
+</div>
+<h1 id="pip">pip</h1>
+<ol>
+<li>pip 安装包  </li>
+</ol>
+<p><code>pip install xxx</code></p>
+<ol>
+<li>pip查看已安装的包（包括安装路径等详细信息）</li>
+</ol>
+<p><code>pip show --files xxx</code></p>
+<ol>
+<li>检查哪些包需要更新</li>
+</ol>
+<p><code>pip list --outdated</code></p>
+<ol>
+<li>pip卸载包</li>
+</ol>
+<p><code>pip uninstall xxx</code></p>
+<ol>
+<li>参数解释</li>
+</ol>
+<div class="hlcode"><pre><span class="cp"># pip --help</span>
+
+<span class="nl">Usage:</span>
+
+<span class="n">pip</span> <span class="p">[</span><span class="n">options</span><span class="p">]</span>
+
+<span class="nl">Commands:</span>
+
+<span class="n">install</span><span class="err">                    </span> <span class="err">安装包</span><span class="p">.</span>
+
+<span class="n">uninstall</span><span class="err">                  </span> <span class="err">卸载包</span><span class="p">.</span>
+
+<span class="n">freeze</span><span class="err">                     </span> <span class="err">按着一定格式输出已安装包列表</span>
+
+<span class="n">list</span><span class="err">                       </span> <span class="err">列出已安装包</span><span class="p">.</span>
+
+<span class="n">show</span><span class="err">                       </span> <span class="err">显示包详细信息</span><span class="p">.</span>
+
+<span class="n">search</span><span class="err">                     </span> <span class="err">搜索包，类似</span><span class="n">yum</span><span class="err">里的</span><span class="n">search</span><span class="p">.</span>
+
+<span class="n">wheel</span><span class="err">                      </span> <span class="n">Build</span> <span class="n">wheels</span> <span class="n">from</span> <span class="n">your</span> <span class="n">requirements</span><span class="p">.</span>
+
+<span class="n">zip</span><span class="err">                        </span> <span class="err">不推荐</span><span class="p">.</span> <span class="n">Zip</span> <span class="n">individual</span> <span class="n">packages</span><span class="p">.</span>
+
+<span class="n">unzip</span><span class="err">                      </span> <span class="err">不推荐</span><span class="p">.</span> <span class="n">Unzip</span> <span class="n">individual</span> <span class="n">packages</span><span class="p">.</span>
+
+<span class="n">bundle</span><span class="err">                     </span> <span class="err">不推荐</span><span class="p">.</span> <span class="n">Create</span> <span class="n">pybundles</span><span class="p">.</span>
+
+<span class="n">help</span><span class="err">                       </span> <span class="err">当前帮助</span><span class="p">.</span>
+
+<span class="n">General</span> <span class="n">Options</span><span class="o">:</span>
+
+<span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span><span class="err">                 </span> <span class="err">显示帮助</span><span class="p">.</span>
+
+<span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span><span class="err">              </span> <span class="err">更多的输出，最多可以使用</span><span class="mi">3</span><span class="err">次</span>
+
+<span class="o">-</span><span class="n">V</span><span class="p">,</span> <span class="o">--</span><span class="n">version</span><span class="err">              </span> <span class="err">现实版本信息然后退出</span><span class="p">.</span>
+
+<span class="o">-</span><span class="n">q</span><span class="p">,</span> <span class="o">--</span><span class="n">quiet</span><span class="err">                </span> <span class="err">最少的输出</span><span class="p">.</span>
+
+<span class="o">--</span><span class="n">log</span><span class="o">-</span><span class="n">file</span> <span class="err">          </span> <span class="err">覆盖的方式记录</span><span class="n">verbose</span><span class="err">错误日志，默认文件：</span><span class="o">/</span><span class="n">root</span><span class="o">/</span><span class="p">.</span><span class="n">pip</span><span class="o">/</span><span class="n">pip</span><span class="p">.</span><span class="n">log</span>
+
+<span class="o">--</span><span class="n">log</span> <span class="err">               </span> <span class="err">不覆盖记录</span><span class="n">verbose</span><span class="err">输出的日志</span><span class="p">.</span>
+
+<span class="o">--</span><span class="n">proxy</span> <span class="err">            </span> <span class="n">Specify</span> <span class="n">a</span> <span class="n">proxy</span> <span class="n">in</span> <span class="n">the</span> <span class="n">form</span> <span class="p">[</span><span class="n">user</span><span class="o">:</span><span class="n">passwd</span><span class="err">@</span><span class="p">]</span><span class="n">proxy</span><span class="p">.</span><span class="n">server</span><span class="o">:</span><span class="n">port</span><span class="p">.</span>
+
+<span class="o">--</span><span class="n">timeout</span> <span class="err">            </span> <span class="err">连接超时时间</span> <span class="p">(</span><span class="err">默认</span><span class="mi">15</span><span class="err">秒</span><span class="p">).</span>
+
+<span class="o">--</span><span class="n">exists</span><span class="o">-</span><span class="n">action</span> <span class="err">   </span> <span class="n">Default</span> <span class="n">action</span> <span class="n">when</span> <span class="n">a</span> <span class="n">path</span> <span class="n">already</span> <span class="n">exists</span><span class="o">:</span> <span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="n">witch</span><span class="p">,</span> <span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="n">gnore</span><span class="p">,</span> <span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="n">ipe</span><span class="p">,</span> <span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="n">ackup</span><span class="p">.</span>
+
+<span class="o">--</span><span class="n">cert</span> <span class="err">              </span> <span class="err">证书</span><span class="p">.</span>
+</pre></div>
+    </div>
+    <div id="footer">
+      <span>
+        <p>Copyright © 2018 .
+        Powered by <a href="http://simiki.org/" target="_blank">Simiki</a>.</p>
+        <p>Site Generated 2018-04-09 10:38:59</p>
+      </span>
+    </div>
+
+    
+    
+  </body>
+</html>
